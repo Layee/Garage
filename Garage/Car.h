@@ -25,8 +25,8 @@ public:
 	void setTurn();
 	~Car();
 
-	/*bool operator == (const string compareLicense);
-	bool operator != (const string compareLicense);*/
+	bool operator == (string compareLicense);
+	bool operator != (string compareLicense);
 };
 
 #include "Car.cpp"

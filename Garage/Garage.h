@@ -14,7 +14,7 @@ private:
 
 
 public:
-	Garage();
+	/*Garage();*/
 	bool checkLaneOne();
 	bool  checkLaneTwo();
 	void toLaneOne( Car& newCar);

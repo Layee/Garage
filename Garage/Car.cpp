@@ -24,7 +24,7 @@ Car::~Car()
 
 // compare license plate
 
-bool Car:: operator== (const string compareLicense) {
+bool Car:: operator== ( string compareLicense) {
 	if (compareLicense == plate.getPlate()) {
 		return true;
 	}
@@ -33,7 +33,7 @@ bool Car:: operator== (const string compareLicense) {
 	}
 }
 
-bool Car::operator!= (const string compareLicense) {
+bool Car::operator!= ( string compareLicense) {
 	if (compareLicense != plate) {
 		return true;
 	}

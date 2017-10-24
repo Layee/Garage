@@ -1,5 +1,6 @@
 #include "Garage.h"
-
+#include <iostream>
+using namespace std;
 
 
 
@@ -100,7 +101,7 @@ void Garage::arrival(Car& newEntry) {
 
 
 void Garage:: departure( Car& departure) {
-	if (laneOne.search(departure.getPlate()) == true) {
+	if (laneOne.search(departure) == true) {
 
  }
 

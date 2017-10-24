@@ -5,14 +5,6 @@ c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): error C2244: '
   c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(ItemType &)'
   c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: existing declarations
   c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(const ItemType &)'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(27): error C2039: '==': is not a member of 'Car'
-  c:\users\abraham\desktop\csc326\garage\garage\car.h(9): note: see declaration of 'Car'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): error C2065: 'plate': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): error C2228: left of '.getPlate' must have class/struct/union
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): note: type is 'unknown-type'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(36): error C2039: '!=': is not a member of 'Car'
-  c:\users\abraham\desktop\csc326\garage\garage\car.h(9): note: see declaration of 'Car'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(37): error C2065: 'plate': undeclared identifier
 c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(74): error C2276: '!': illegal operation on bound member function expression
 c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): error C2664: 'bool ArrayStack<Car>::search(const ItemType &)': cannot convert argument 1 from 'std::string' to 'const Car &'
           with
@@ -21,15 +13,56 @@ c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): error C2664: 'boo
           ]
   c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: Reason: cannot convert from 'std::string' to 'const Car'
   c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  Garage.cpp
+c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): error C2244: 'ArrayStack<ItemType>::search': unable to match function definition to an existing declaration
+  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(76): note: see declaration of 'ArrayStack<ItemType>::search'
+  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: definition
+  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(ItemType &)'
+  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: existing declarations
+  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(const ItemType &)'
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(47): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(63): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(74): error C2276: '!': illegal operation on bound member function expression
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(88): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(93): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(97): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): error C2664: 'bool ArrayStack<Car>::search(const ItemType &)': cannot convert argument 1 from 'std::string' to 'const Car &'
+          with
+          [
+              ItemType=Car
+          ]
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: Reason: cannot convert from 'std::string' to 'const Car'
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(16): error C2084: function 'bool Garage::checkLaneOne(void)' already has a body
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(16): note: see previous definition of 'checkLaneOne'
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(29): error C2084: function 'bool Garage::checkLaneTwo(void)' already has a body
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(29): note: see previous definition of 'checkLaneTwo'
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(42): error C2084: function 'void Garage::toLaneOne(Car &)' already has a body
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(42): note: see previous definition of 'toLaneOne'
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(47): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(57): error C2084: function 'void Garage::toLaneTwo(Car &)' already has a body
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(57): note: see previous definition of 'toLaneTwo'
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(63): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(69): error C2084: function 'void Garage::toStreet(Car &)' already has a body
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(69): note: see previous definition of 'toStreet'
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(74): error C2276: '!': illegal operation on bound member function expression
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(84): error C2084: function 'void Garage::arrival(Car &)' already has a body
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(84): note: see previous definition of 'arrival'
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(88): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(93): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(97): error C2065: 'cout': undeclared identifier
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(102): error C2084: function 'void Garage::departure(Car &)' already has a body
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(102): note: see previous definition of 'departure'
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): error C2664: 'bool ArrayStack<Car>::search(const ItemType &)': cannot convert argument 1 from 'std::string' to 'const Car &'
+          with
+          [
+              ItemType=Car
+          ]
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: Reason: cannot convert from 'std::string' to 'const Car'
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(111): error C2084: function 'Garage::~Garage(void)' already has a body
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(110): note: see previous definition of '{dtor}'
   Car.cpp
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(27): error C2039: '==': is not a member of 'Car'
-  c:\users\abraham\desktop\csc326\garage\garage\car.h(9): note: see declaration of 'Car'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): error C2065: 'plate': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): error C2228: left of '.getPlate' must have class/struct/union
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): note: type is 'unknown-type'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(36): error C2039: '!=': is not a member of 'Car'
-  c:\users\abraham\desktop\csc326\garage\garage\car.h(9): note: see declaration of 'Car'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(37): error C2065: 'plate': undeclared identifier
 c:\users\abraham\desktop\csc326\garage\garage\car.cpp(5): error C2084: function 'void Car::setPlate(std::string)' already has a body
   c:\users\abraham\desktop\csc326\garage\garage\car.cpp(5): note: see previous definition of 'setPlate'
 c:\users\abraham\desktop\csc326\garage\garage\car.cpp(12): error C2084: function 'void Car::setTurn(void)' already has a body
@@ -38,18 +71,6 @@ c:\users\abraham\desktop\csc326\garage\garage\car.cpp(16): error C2084: function
   c:\users\abraham\desktop\csc326\garage\garage\car.cpp(16): note: see previous definition of 'setCarStatus'
 c:\users\abraham\desktop\csc326\garage\garage\car.cpp(21): error C2084: function 'Car::~Car(void)' already has a body
   c:\users\abraham\desktop\csc326\garage\garage\car.cpp(20): note: see previous definition of '{dtor}'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(27): error C2039: '==': is not a member of 'Car'
-  c:\users\abraham\desktop\csc326\garage\garage\car.h(9): note: see declaration of 'Car'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(27): error C2084: function 'bool ==(const std::string)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(27): note: see previous definition of '=='
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): error C2065: 'plate': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): error C2228: left of '.getPlate' must have class/struct/union
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(28): note: type is 'unknown-type'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(36): error C2039: '!=': is not a member of 'Car'
-  c:\users\abraham\desktop\csc326\garage\garage\car.h(9): note: see declaration of 'Car'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(36): error C2084: function 'bool !=(const std::string)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(36): note: see previous definition of '!='
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(37): error C2065: 'plate': undeclared identifier
   ArrayStack.cpp
 c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): error C2244: 'ArrayStack<ItemType>::search': unable to match function definition to an existing declaration
   c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(76): note: see declaration of 'ArrayStack<ItemType>::search'
