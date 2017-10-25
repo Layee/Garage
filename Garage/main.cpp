@@ -20,13 +20,21 @@ int main() {
 	if (!myfile) {
 		cout << "File not found" << endl;
 	}
-	else {
+	while (!myfile.eof()) {
+
 		myfile >> A_D >> carPlate;
-		cout << A_D << " testing " << endl;
-	}
+		tempCar.setPlate(carPlate);
+		if (A_D == 'A') {
+			garageCar.arrival(tempCar);
+		}
 
+		else
+		{
+			garageCar.departure(tempCar);
+		}	
+	 }
 
-
+	myfile.close();
 
 	system("pause");
 	return 0;

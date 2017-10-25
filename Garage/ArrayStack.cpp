@@ -73,12 +73,13 @@ bool ArrayStack<ItemType>::isFull() {
 
 // push plates into the stack and compare
 template <class ItemType>
-bool ArrayStack<ItemType> :: search(const ItemType& newEntry) {
+bool ArrayStack<ItemType> :: search(ItemType& newEntry) {
 	for (int i = 0; i < top; i++) {
-		if (items[i] == newEntry) {
+		if (items[i].getPlate() == newEntry.getPlate())
+		{
 			return true;
-	 }
-		
-		  }
-	return  false;
+		}
+
+	}
+	return false;
 }

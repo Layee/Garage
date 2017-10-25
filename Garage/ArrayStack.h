@@ -26,7 +26,7 @@ public:
 	bool pop();
 	bool isFull();
 	ItemType peek() const;
-	bool search(const ItemType& newEntry);
+	bool search( ItemType& newEntry);
 }; // end ArrayStack
 
 #include "ArrayStack.cpp"

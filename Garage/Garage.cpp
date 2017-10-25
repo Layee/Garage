@@ -124,12 +124,33 @@ void Garage:: departure( Car& departure) {
 			}
 			else if (laneTwo.isFull() == true) {
 				street.push(temp);
-				counterThree++;
+				counterThree++;		
 				
 			}
-		}
 
+		}
+		while (counterThree != 0)
+		{
+			temp = street.peek();
+			street.pop();
+			cout << temp.getPlate() << " has been moved from street back to lane 1" << endl;
+			laneOne.push(temp);
+			counterThree--;
+		}
+		while (counterTwo != 0)
+		{
+			temp = laneTwo.peek();
+			laneTwo.pop();
+			cout << temp.getPlate() << " has been moved from lane 2 back to lane 1" << endl;
+			laneOne.push(temp);
+			counterTwo--;
+		}
  }
+
+	else {
+
+		 // laneTwo
+	}
 
 }
 

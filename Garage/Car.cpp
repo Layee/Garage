@@ -33,5 +33,9 @@ bool Car::operator!= (Car& compareLicense) {
 	
 }
 
+Car:: ~Car() {
+
+}
+
 
 

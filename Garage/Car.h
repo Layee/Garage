@@ -14,7 +14,6 @@ private:
 	char carStatus;		// arrive or departure
 
 public:
-	Car();
 	 string getPlate() { return plate; };
 	int getCounter() { return counter; }
 	char getCarStatus() { return carStatus; }
