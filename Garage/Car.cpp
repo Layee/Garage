@@ -1,4 +1,5 @@
 #include "Car.h"
+#include<string>
 
 //get the car plate
 
@@ -17,27 +18,20 @@ void Car::setCarStatus( char newStatus) {
 	carStatus = newStatus;
 }
 
-Car::~Car()
-{
-}
-
 
 // compare license plate
 
-bool Car:: operator== ( string compareLicense) {
-	if (compareLicense == plate.getPlate()) {
-		return true;
-	}
-	else {
-		return false;
-	}
+bool Car:: operator== (Car& compareLicense) {
+
+	return  (plate == compareLicense.getPlate());
 }
 
-bool Car::operator!= ( string compareLicense) {
-	if (compareLicense != plate) {
-		return true;
-	}
-	else {
-		return false;
-	}
+bool Car::operator!= (Car& compareLicense) {
+
+	return (plate != compareLicense.getPlate());
+	
+	
 }
+
+
+

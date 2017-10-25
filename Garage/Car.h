@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include<string>
 using namespace std;
 
@@ -15,18 +14,16 @@ private:
 	char carStatus;		// arrive or departure
 
 public:
-
-	string getPlate() { return plate; }
+	Car();
+	 string getPlate() { return plate; };
 	int getCounter() { return counter; }
 	char getCarStatus() { return carStatus; }
-
+	~Car();
 	void setPlate( string newPlate);
 	void setCarStatus( char newStatus);
 	void setTurn();
-	~Car();
-
-	bool operator == (string compareLicense);
-	bool operator != (string compareLicense);
+	bool operator == (Car& compareLicense);
+	bool operator != (Car& compareLicense);
 };
 
 #include "Car.cpp"

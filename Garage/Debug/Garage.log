@@ -1,99 +1,22 @@
 ﻿  main.cpp
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): error C2244: 'ArrayStack<ItemType>::search': unable to match function definition to an existing declaration
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(76): note: see declaration of 'ArrayStack<ItemType>::search'
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: definition
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(ItemType &)'
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: existing declarations
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(const ItemType &)'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(74): error C2276: '!': illegal operation on bound member function expression
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): error C2664: 'bool ArrayStack<Car>::search(const ItemType &)': cannot convert argument 1 from 'std::string' to 'const Car &'
+c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(78): error C2678: binary '==': no operator found which takes a left-hand operand of type 'Car' (or there is no acceptable conversion)
+  c:\users\abraham\desktop\csc326\garage\garage\car.h(25): note: could be 'bool Car::operator ==(Car &)'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(389): note: or       'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(381): note: or       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(373): note: or       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(365): note: or       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(339): note: or       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) throw()'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(334): note: or       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) throw()'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(329): note: or       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) throw()'
+  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(78): note: while trying to match the argument list '(Car, const Car)'
+  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(76): note: while compiling class template member function 'bool ArrayStack<Car>::search(const ItemType &)'
           with
           [
               ItemType=Car
           ]
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: Reason: cannot convert from 'std::string' to 'const Car'
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-  Garage.cpp
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): error C2244: 'ArrayStack<ItemType>::search': unable to match function definition to an existing declaration
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(76): note: see declaration of 'ArrayStack<ItemType>::search'
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: definition
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(ItemType &)'
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: existing declarations
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(const ItemType &)'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(47): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(63): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(74): error C2276: '!': illegal operation on bound member function expression
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(88): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(93): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(97): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): error C2664: 'bool ArrayStack<Car>::search(const ItemType &)': cannot convert argument 1 from 'std::string' to 'const Car &'
+  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(109): note: see reference to function template instantiation 'bool ArrayStack<Car>::search(const ItemType &)' being compiled
           with
           [
               ItemType=Car
           ]
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: Reason: cannot convert from 'std::string' to 'const Car'
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(16): error C2084: function 'bool Garage::checkLaneOne(void)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(16): note: see previous definition of 'checkLaneOne'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(29): error C2084: function 'bool Garage::checkLaneTwo(void)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(29): note: see previous definition of 'checkLaneTwo'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(42): error C2084: function 'void Garage::toLaneOne(Car &)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(42): note: see previous definition of 'toLaneOne'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(47): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(57): error C2084: function 'void Garage::toLaneTwo(Car &)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(57): note: see previous definition of 'toLaneTwo'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(63): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(69): error C2084: function 'void Garage::toStreet(Car &)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(69): note: see previous definition of 'toStreet'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(74): error C2276: '!': illegal operation on bound member function expression
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(84): error C2084: function 'void Garage::arrival(Car &)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(84): note: see previous definition of 'arrival'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(88): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(93): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(97): error C2065: 'cout': undeclared identifier
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(102): error C2084: function 'void Garage::departure(Car &)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(102): note: see previous definition of 'departure'
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): error C2664: 'bool ArrayStack<Car>::search(const ItemType &)': cannot convert argument 1 from 'std::string' to 'const Car &'
-          with
-          [
-              ItemType=Car
-          ]
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: Reason: cannot convert from 'std::string' to 'const Car'
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(103): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(111): error C2084: function 'Garage::~Garage(void)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\garage.cpp(110): note: see previous definition of '{dtor}'
-  Car.cpp
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(5): error C2084: function 'void Car::setPlate(std::string)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(5): note: see previous definition of 'setPlate'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(12): error C2084: function 'void Car::setTurn(void)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(12): note: see previous definition of 'setTurn'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(16): error C2084: function 'void Car::setCarStatus(char)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(16): note: see previous definition of 'setCarStatus'
-c:\users\abraham\desktop\csc326\garage\garage\car.cpp(21): error C2084: function 'Car::~Car(void)' already has a body
-  c:\users\abraham\desktop\csc326\garage\garage\car.cpp(20): note: see previous definition of '{dtor}'
-  ArrayStack.cpp
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): error C2244: 'ArrayStack<ItemType>::search': unable to match function definition to an existing declaration
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(76): note: see declaration of 'ArrayStack<ItemType>::search'
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: definition
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(ItemType &)'
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: existing declarations
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(const ItemType &)'
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(12): error C2995: 'ArrayStack<ItemType>::ArrayStack(void)': function template has already been defined
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.h(23): note: see declaration of 'ArrayStack<ItemType>::ArrayStack'
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(20): error C2995: 'bool ArrayStack<ItemType>::isEmpty(void) const': function template has already been defined
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.h(24): note: see declaration of 'ArrayStack<ItemType>::isEmpty'
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(34): error C2995: 'bool ArrayStack<ItemType>::push(const ItemType &)': function template has already been defined
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.h(25): note: see declaration of 'ArrayStack<ItemType>::push'
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(48): error C2995: 'bool ArrayStack<ItemType>::pop(void)': function template has already been defined
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.h(26): note: see declaration of 'ArrayStack<ItemType>::pop'
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(58): error C2995: 'ItemType ArrayStack<ItemType>::peek(void) const': function template has already been defined
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.h(28): note: see declaration of 'ArrayStack<ItemType>::peek'
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(71): error C2995: 'bool ArrayStack<ItemType>::isFull(void)': function template has already been defined
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.h(27): note: see declaration of 'ArrayStack<ItemType>::isFull'
-c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): error C2244: 'ArrayStack<ItemType>::search': unable to match function definition to an existing declaration
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(76): note: see declaration of 'ArrayStack<ItemType>::search'
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: definition
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(ItemType &)'
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: existing declarations
-  c:\users\abraham\desktop\csc326\garage\garage\arraystack.cpp(84): note: 'bool ArrayStack<ItemType>::search(const ItemType &)'
-  Generating Code...
+  c:\users\abraham\desktop\csc326\garage\garage\garage.h(11): note: see reference to class template instantiation 'ArrayStack<Car>' being compiled

@@ -116,9 +116,6 @@
     <ClInclude Include="StackInterface.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ArrayStack.cpp" />
-    <ClCompile Include="Car.cpp" />
-    <ClCompile Include="Garage.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

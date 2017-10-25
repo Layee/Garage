@@ -68,11 +68,11 @@ void Garage::toLaneTwo( Car& newCar) {
 
 
 void Garage:: toStreet(Car& newCar) {
-	 if(!laneOne.isEmpty()) {
+	 if(laneOne.isFull()) {
 
 		 street.push(newCar);
   }
-	 else if (!laneTwo.isEmpty) {
+	 else if (laneTwo.isFull()) {
 		 street.push(newCar);
 	 }
 
@@ -101,7 +101,33 @@ void Garage::arrival(Car& newEntry) {
 
 
 void Garage:: departure( Car& departure) {
+	Car temp;
+	int counterOne = 0,
+		counterTwo = 0,
+		counterThree = 0;
+
 	if (laneOne.search(departure) == true) {
+		while (laneOne.isEmpty() == false)
+		{
+			temp = laneOne.peek();
+			laneOne.pop();
+			if (temp.getPlate() == departure.getPlate())
+			{
+				cout << departure.getPlate() << " has been departed from lane 1" << endl;
+				break;
+			}
+			else if (laneTwo.isFull() == false)
+			{
+				laneTwo.push(temp);
+				counterTwo++;
+				cout << temp.getPlate() << " has been moved from lane 1 to lane 2" << endl;
+			}
+			else if (laneTwo.isFull() == true) {
+				street.push(temp);
+				counterThree++;
+				
+			}
+		}
 
  }
 
