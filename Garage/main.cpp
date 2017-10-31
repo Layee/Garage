@@ -12,7 +12,6 @@ int main() {
 	Car tempCar;
 	Garage garageCar;
 	string carPlate;
-	int counter = 0;
 	char A_D;
 
 	ifstream myfile;
@@ -31,6 +30,7 @@ int main() {
 		else
 		{
 			garageCar.departure(tempCar);
+			
 		}	
 	 }
 

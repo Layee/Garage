@@ -10,7 +10,7 @@ void Car::setPlate(string newPlate) {
 
 
 // count the number of times the car was moved
-void Car::setTurn(){
+void Car::incrementCount(){
 	counter++;
 }
 

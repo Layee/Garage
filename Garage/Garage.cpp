@@ -86,11 +86,13 @@ void Garage::arrival(Car& newEntry) {
 
 	if (laneOne.isFull() == false) {
 		laneOne.push(newEntry);
-		cout << newEntry.getPlate() << "has been pushed into lane one" << endl;
+		newEntry.incrementCount();
+		cout << newEntry.getPlate() << " has been pushed into lane one" << endl;
 
   }
 	else if (laneTwo.isFull() == false) {
 		laneTwo.push(newEntry);
+		newEntry.incrementCount();
 		cout << newEntry.getPlate() << " has been pushed into lane two" << endl;
 	}
 
@@ -114,28 +116,38 @@ void Garage:: departure( Car& departure) {
 			if (temp.getPlate() == departure.getPlate())
 			{
 				cout << departure.getPlate() << " has been departed from lane 1" << endl;
+				temp.incrementCount();
+				cout << " and was moved " << temp.getCounter() << endl;
 				break;
 			}
 			else if (laneTwo.isFull() == false)
 			{
 				laneTwo.push(temp);
+				temp.incrementCount();
 				counterTwo++;
-				cout << temp.getPlate() << " has been moved from lane 1 to lane 2" << endl;
+				cout << temp.getPlate() << "  has been moved from lane 1 to lane 2 " << endl;
+				//cout << temp.getCounter() << " times " << endl;	 // testing
+				
 			}
 			else if (laneTwo.isFull() == true) {
 				street.push(temp);
-				counterThree++;		
+				temp.incrementCount();
+				counterThree++;
+				cout<< temp.getPlate() << "  has been moved from lane 1 to street " << endl;
 				
 			}
 
 		}
-		while (counterThree != 0)
+		while (counterThree!=0)
 		{
 			temp = street.peek();
 			street.pop();
 			cout << temp.getPlate() << " has been moved from street back to lane 1" << endl;
 			laneOne.push(temp);
+			temp.incrementCount();
 			counterThree--;
+			//cout << temp.incrementCount() << " times " << endl;	 // testing
+			
 		}
 		while (counterTwo != 0)
 		{
@@ -143,13 +155,43 @@ void Garage:: departure( Car& departure) {
 			laneTwo.pop();
 			cout << temp.getPlate() << " has been moved from lane 2 back to lane 1" << endl;
 			laneOne.push(temp);
+			temp.incrementCount();
 			counterTwo--;
 		}
  }
 
 	else {
 
-		 // laneTwo
+		 // lane two
+
+		if (laneTwo.search(temp) == true) {
+
+			while (laneTwo.isEmpty() == false)
+			{
+				temp = laneTwo.peek();
+				laneTwo.pop();
+
+				if (temp.getPlate() == departure.getPlate()) {
+					cout << departure.getPlate() << " has been departed from lane 2" << endl;
+					cout << " and was moved " << temp.getCounter() << endl;
+					break;
+				}
+
+				else if (laneOne.isFull() == false) {
+					temp.incrementCount();
+					laneOne.push(temp);
+					cout << temp.getPlate() << " has been moved from lane 2 to lane 1" << endl;
+					
+					
+				}
+				else if (laneOne.isFull() == true) {
+					temp.incrementCount();
+					street.push(temp);
+					
+
+				}
+			}
+		}
 	}
 
 }

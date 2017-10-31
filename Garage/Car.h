@@ -10,7 +10,7 @@ class Car
 
 private:
 	string plate;  // car plate
-	int counter;   // numbers of time the car changed lanes
+	int counter = 0;   // numbers of time the car changed lanes
 	char carStatus;		// arrive or departure
 
 public:
@@ -20,7 +20,7 @@ public:
 	~Car();
 	void setPlate( string newPlate);
 	void setCarStatus( char newStatus);
-	void setTurn();
+	void incrementCount();
 	bool operator == (Car& compareLicense);
 	bool operator != (Car& compareLicense);
 };
